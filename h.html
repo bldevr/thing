@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Objects</h2>
+
+    <p id="ob"></p>
+    <p id="ob2"></p>
+
+    <script>
+        let person = {
+            name: "BB",
+            testscore: 97,
+            gpa: 89,
+        };
+
+        let thing = person;
+        thing.gpa = 99;
+
+        let key = prompt("What do you want to know about the user?", "name");
+
+        alert(person[key]);
+
+        document.getElementById("ob").innerHTML = person.name + " got a " + person.testscore + " on his last exam and his gpa is " + person.gpa;
+    </script>
+
+</body>
+
+</html>
