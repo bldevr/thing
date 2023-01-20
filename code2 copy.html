@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initialize();">
+    <h1>Bleron's Shopping List</h1>
+
+    <h2 id=list>Your List</h2>
+    <div id=shopp></div>
+
+
+    <script>
+        function myFunction() {
+            var thing = document.getElementById("adiv");
+            thing.querySelector(".thingy").innerHTML = "Welcome To The Game, Hope You're Doing Great!";
+        }
+    </script>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <form id="inputform">
+
+                <label for="numItem"> </label>
+                <input type="number" id="numItem">
+
+                <label for="newItem"> </label>
+                <input type="text" id="newItem">
+            </form>
+        </div>
+
+        <div class="grid-item">
+
+        </div>
+        <div class="grid-item">
+            <img src="f.jpeg" width="200" height="150" />
+            <img src="c.jpeg" width="200" height="150" />
+            <img src="b.png" width="200" height="150" />
+        </div>
+        <div class="grid-item">
+            <button onclick="addData();">Add</button>
+            <button onclick="remData();">Remove</button>
+            <button onclick="upData();">Move Up</button>
+            <button onclick="downData();">Move Down</button>
+        </div>
+
+        <div class="grid-item">
+            <div id=done></div>
+
+            <div id=sec></div>
+        </div>
+
+        <div class="grid-item" ; id="adiv">
+            <h2 class="thingy">Nohing To Be Seen Here!</h2>
+        </div>
+        <div class="grid-item">
+            <button onclick="myFunction()">Click Me To Be Greeted</button>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <script src="code.js"></script>
+
+</body>
